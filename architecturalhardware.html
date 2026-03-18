@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architectural Hardware
+    | Oysto PARTITIONS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <link rel="stylesheet" href="css/architecturalhardware.css">
+
+</head>
+
+<body>
+
+
+  <header id="navbar">
+
+    <div class="nav-container">
+
+      <!-- LOGO -->
+
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Company Logo">
+        </a>
+      </div>
+
+
+      <!-- NAV LINKS -->
+
+      <ul class="nav-links">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="about.html">About Us</a></li>
+
+
+        <li class="dropdown">
+
+          <a href="product.html">Products ▾</a>
+
+          <div class="dropdown-menu">
+
+            <a href="sleekeries.html" class="dropdown-item">Sleek Series</a>
+
+            <a href="ecoseries-45.html" class="dropdown-item">Eco Series - 45</a>
+
+            <a href="ultraseries-75.html" class="dropdown-item">Ultra Series - 75</a>
+
+            <a href="neonseries-100.html" class="dropdown-item">Neon Series - 100</a>
+
+            <a href="styledoor.html" class="dropdown-item">Style Door</a>
+
+            <a href="technicalpanel.html" class="dropdown-item">Technical Panel</a>
+
+            <a href="architecturalhardware.html" class="dropdown-item">Architectural Hardware</a>
+
+            <a href="accessories.html" class="dropdown-item">Accessories</a>
+
+          </div>
+
+        </li>
+
+
+        <li><a href="contact.html">Contact Us</a></li>
+
+      </ul>
+
+
+      <!-- MOBILE MENU -->
+
+      <div class="menu-toggle">
+        ☰
+      </div>
+
+
+    </div>
+
+  </header>
+
+
+
+  <script>
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    const navbar = document.getElementById("navbar");
+
+    /* MOBILE MENU */
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    /* MOBILE DROPDOWN */
+
+    const dropdown = document.querySelector(".dropdown > a");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
+
+    dropdown.addEventListener("click", function (e) {
+
+      if (window.innerWidth <= 768) {
+
+        // first click → dropdown open
+        if (!dropdownMenu.classList.contains("show")) {
+          e.preventDefault();
+          dropdownMenu.classList.add("show");
+        }
+
+        // second click → open product page
+
+      }
+
+    });
+
+    /* NAVBAR SCROLL EFFECT */
+
+    window.addEventListener("scroll", () => {
+
+      if (window.scrollY > 80) {
+        navbar.classList.add("navbar-scrolled");
+      } else {
+        navbar.classList.remove("navbar-scrolled");
+      }
+
+    });
+
+  </script>
+
+
+
+
+
+
+
+
+  <!-- HERO -->
+  <section class="products-hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-text">
+      <h1>Architectural Hardware</h1>
+      <p>“Architectural Hardware – Essential aluminum accessories for glass partition systems.”</p>
+    </div>
+
+  </section>
+
+
+
+
+
+
+  <div class="bg-watermark">OYSTO</div>
+
+  <section class="premium-container">
+    <h1 class="header-title">Architectural Hardware</h1>
+
+    <div id="catalog">
+      <div class="product-row">
+        <div class="image-box"><img src="images/hard1.png"
+            alt="S.S Flush Hinges"></div>
+        <div class="content-box">
+
+          <h2>Stainless Steel Flush Hinges</h2>
+          <div class="specs-grid">
+            <div class="spec-item"><label>Material</label><span>Stainless Steel 304</span></div>
+            <div class="spec-item"><label>Type</label><span>Ball Bearing</span></div>
+            <div class="spec-item"><label>Size</label><span>5 x 3 x 3</span></div>
+            <div class="spec-item"><label>Finish</label><span>S.S / Black</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-row">
+        <div class="image-box"><img src="images/hard2.png"
+            alt="Studio Lock"></div>
+        <div class="content-box">
+
+          <h2>Studio Glass Door Lock</h2>
+          <div class="specs-grid">
+            <div class="spec-item"><label>Suitable</label><span>10 / 12 MM Glass</span></div>
+            <div class="spec-item"><label>Material</label><span>Premium Aluminum</span></div>
+            <div class="spec-item"><label>Finish</label><span>Silver / Black Anodised</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-row">
+        <div class="image-box"><img src="images/hard3.png"
+            alt="Glass Door Hinge"></div>
+        <div class="content-box">
+
+          <h2>Glass Door Hinges</h2>
+          <div class="specs-grid">
+            <div class="spec-item"><label>Weight</label><span>80kg Max</span></div>
+            <div class="spec-item"><label>Door Size</label><span>900 x 2400MM</span></div>
+            <div class="spec-item"><label>Glass</label><span>10 / 12MM</span></div>
+            <div class="spec-item"><label>Material</label><span>Aluminum</span></div>
+            <div class="spec-item"><label>Finish</label><span>Silver / Black Color</span></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="product-row">
+        <div class="image-box"><img src="images/hard4.png"
+            alt="Door Closer"></div>
+        <div class="content-box">
+
+          <h2>Overhead Door Closer</h2>
+          <div class="specs-grid">
+            <div class="spec-item"><label>Weight</label><span> 60 to 80kg </span></div>
+            <div class="spec-item"><label>Door Size</label><span>900 x 2400MM</span></div>
+            <div class="spec-item"><label>Material</label><span>Aluminum</span></div>
+            <div class="spec-item"><label>Glass</label><span>10 / 12MM</span></div>
+            <div class="spec-item"><label>Finish</label><span>Silver / Black</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-row">
+        <div class="image-box"><img src="images/hard5.png"
+            alt="Saddle Plate"></div>
+        <div class="content-box">
+
+          <h2>Saddle Plate</h2>
+          <div class="specs-grid">
+            <div class="spec-item"><label>Purpose</label><span>Mounting closer on glass</span></div>
+            <div class="spec-item"><label>Material</label><span>Aluminum</span></div>
+            <div class="spec-item"><label>Finish</label><span>Silver / Black</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-row">
+        <div class="image-box"><img src="images/hard6.png"
+            alt="Concealed Closer"></div>
+        <div class="content-box">
+
+          <h2> Door Pelmet Arm</h2>
+          <div class="specs-grid">
+            <div class="spec-item"><label>Weight</label><span>80kg Max</span></div>
+            <div class="spec-item"><label>Glass</label><span>10 / 12MM</span></div>
+            
+            <div class="spec-item"><label>Material</label><span>Aluminum</span></div>
+            <div class="spec-item"><label>Finish</label><span>Silver / Black</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-row">
+        <div class="image-box"><img src="images/hard7.png"
+            alt="Bottom Lock"></div>
+        <div class="content-box">
+          <h2>Bottom Lock</h2>
+          <div class="specs-grid">
+            <div class="spec-item"><label>Glass</label><span>10 / 12MM</span></div>
+            <div class="spec-item"><label>Material</label><span>Stainless Steel</span></div>
+            <div class="spec-item"><label>Finish</label><span>Satin / Black</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1 -->
+      <div class="product-row">
+        <div class="image-box">
+          <img src="images/hard8.png">
+        </div>
+
+        <div class="content-box">
+
+          <h2>Narrow Style Mortise Handle</h2>
+
+          <div class="specs-grid">
+
+            <div class="spec-item">
+              <label>Material</label>
+              <span>Stainless Steel / Black Color</span>
+            </div>
+
+            <div class="spec-item">
+              <label>Finish</label>
+              <span>Satin Finish</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 2 -->
+      <div class="product-row">
+        <div class="image-box">
+          <img src="images/hard9.png">
+        </div>
+
+        <div class="content-box">
+
+          <h2>Narrow Style Mortise Lock</h2>
+
+          <div class="specs-grid">
+
+            <div class="spec-item">
+              <label>Type</label>
+              <span>Narrow style lock body</span>
+            </div>
+
+            <div class="spec-item">
+              <label>Use</label>
+              <span>Aluminum door with latch & double throw dead bolt</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 3 -->
+      <div class="product-row">
+        <div class="image-box">
+          <img src="images/hard10.png">
+        </div>
+
+        <div class="content-box">
+
+          <h2>Narrow Style Dead Bolt</h2>
+
+          <div class="specs-grid">
+
+            <div class="spec-item">
+              <label>Type</label>
+              <span>Close body dead bolt</span>
+            </div>
+
+            <div class="spec-item">
+              <label>Use</label>
+              <span>Aluminum / Wooden door</span>
+            </div>
+
+            <div class="spec-item">
+              <label>Finish</label>
+              <span>Silver Anodized / Black Color</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 4 -->
+      <div class="product-row">
+        <div class="image-box">
+          <img src="images/hard11.png">
+        </div>
+
+        <div class="content-box">
+
+          <h2>Cylinder</h2>
+
+          <div class="specs-grid">
+
+            <div class="spec-item">
+              <label>Type</label>
+              <span>One side key one side knob</span>
+            </div>
+
+            <div class="spec-item">
+              <label>Material</label>
+              <span>Ultra Key Brass</span>
+            </div>
+
+            <div class="spec-item">
+              <label>Size</label>
+              <span>60 / 70 MM</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 5 -->
+      <div class="product-row">
+        <div class="image-box">
+          <img src="images/hard12.png">
+        </div>
+
+        <div class="content-box">
+
+          <h2>Offset Handle OystoSS30</h2>
+
+          <div class="specs-grid">
+
+            <div class="spec-item">
+              <label>Material</label>
+              <span>Stainless Steel</span>
+            </div>
+
+            <div class="spec-item">
+              <label>Finish</label>
+              <span>Satin / Black Color</span>
+            </div>
+
+            <div class="spec-item">
+              <label>Size</label>
+              <span>22 x 300 MM , 22 x 450 MM 25 x 600 MM</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 6 -->
+      <div class="product-row">
+        <div class="image-box">
+          <img src="images/hard13.png">
+        </div>
+
+        <div class="content-box">
+
+          <h2>Pull Handle OystoSS30</h2>
+
+          <div class="specs-grid">
+
+             <div class="spec-item">
+              <label>Material</label>
+              <span>Stainless Steel</span>
+            </div>
+
+
+
+
+            <div class="spec-item">
+              <label>Finish</label>
+              <span>Satin Finish / Black Color</span>
+            </div>
+
+            
+             <div class="spec-item">
+              <label>Size</label>
+              <span>25 x 300 / 25 x 450 MM</span>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 7 -->
+      <div class="product-row">
+        <div class="image-box">
+          <img src="images/hard14.png">
+        </div>
+
+        <div class="content-box">
+
+          <h2>Pull Handle</h2>
+
+          <div class="specs-grid">
+
+          
+
+            <div class="spec-item">
+              <label>Material</label>
+              <span>Stainless Steel</span>
+            </div>
+
+
+
+             
+            <div class="spec-item">
+              <label>Finish</label>
+              <span>Satin Finish / Black Color</span>
+            </div>
+
+
+
+
+             <div class="spec-item">
+              <label>Size</label>
+              <span>25 x 300 / 25 x 450 MM</span>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="modal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img id="modalImg" src="">
+
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // SCROLL ANIMATION
+      const rows = document.querySelectorAll('.product-row');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, { threshold: 0.1 });
+      rows.forEach(row => observer.observe(row));
+
+      // POPUP LOGIC
+      const modal = document.getElementById("modal");
+      const modalImg = document.getElementById("modalImg");
+
+      document.querySelectorAll(".image-box").forEach(box => {
+        box.onclick = () => {
+          modal.style.display = "flex";
+          modalImg.src = box.querySelector("img").src;
+          document.body.style.overflow = "hidden";
+        };
+      });
+
+      document.querySelector(".close-modal").onclick = () => {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      };
+    });
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+<section class="engineering">
+  <div class="eng-container">
+
+    <h2 class="engineering-title">Engineering Highlights</h2>
+
+    <div class="engineering-line">
+
+      <div class="eng-item reveal">
+        <div class="eng-icon">
+          <i class="fa-solid fa-door-open"></i>
+        </div>
+        <h3>Durable Hinges</h3>
+        <p>Strong stainless steel hinges.</p>
+      </div>
+
+      <div class="eng-item reveal">
+        <div class="eng-icon">
+          <i class="fa-solid fa-lock"></i>
+        </div>
+        <h3>Secure Locks</h3>
+        <p>Reliable glass door locking systems.</p>
+      </div>
+
+      <div class="eng-item reveal">
+        <div class="eng-icon">
+          <i class="fa-solid fa-gears"></i>
+        </div>
+        <h3>Door Closers</h3>
+        <p>Smooth and controlled door closing.</p>
+      </div>
+
+      <div class="eng-item reveal">
+        <div class="eng-icon">
+          <i class="fa-solid fa-layer-group"></i>
+        </div>
+        <h3>Glass Support</h3>
+        <p>Suitable for 10mm & 12mm glass.</p>
+      </div>
+
+      <div class="eng-item reveal">
+        <div class="eng-icon">
+          <i class="fa-solid fa-medal"></i>
+        </div>
+        <h3>Premium Finish</h3>
+        <p>Silver and black anodized finish.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<script>
+  const reveals = document.querySelectorAll(".reveal");
+
+  window.addEventListener("scroll", () => {
+
+    reveals.forEach(el => {
+
+      const pos = el.getBoundingClientRect().top;
+
+      if (pos < window.innerHeight - 100) {
+        el.classList.add("active");
+      }
+
+    });
+
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="cta-section">
+
+  <div class="cta-container">
+
+    <h2>Request a Quote</h2>
+
+    <p>
+      Looking for modern glass partition solutions for your office or commercial
+      space? Get in touch with our experts today and receive a customized quote.
+    </p>
+
+    <a href="contact.html" class="cta-btn">
+      <i class="fa-solid fa-paper-plane"></i> Get a Quote
+    </a>
+
+  </div>
+
+</section>
+
+
+<script>
+
+  const cta = document.querySelector(".cta-section");
+
+  window.addEventListener("scroll", () => {
+
+    const top = cta.getBoundingClientRect().top;
+
+    if (top < window.innerHeight - 100) {
+      cta.classList.add("cta-show");
+    }
+
+  });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- LOGO -->
+
+    <div class="footer-box left-anim">
+
+      <img src="images/logo.png" class="footer-logo">
+
+      <p>
+        Premium office partitions and modular solutions
+        for modern workplaces.
+      </p>
+
+    </div>
+
+
+    <!-- PRODUCTS -->
+
+    <div class="footer-box left-anim">
+
+      <h2>Products</h2>
+      <ul>
+        <li><a href="sleekeries.html">Sleek Series</a></li>
+
+        <li><a href="ecoseries-45.html">Eco Series - 45</a></li>
+
+        <li><a href="ultraseries-75.html">Ultra Series - 75</a></li>
+
+        <li><a href="neonseries-100.html">Neon Series - 100</a></li>
+
+        <li><a href="styledoor.html">Style Door</a></li>
+
+        <li><a href="technicalpanel.html">Technical Panel</a></li>
+
+        <li><a href="architecturalhardware.html">Architectural Hardware</a></li>
+
+        <li><a href="accessories.html">Accessories</a></li>
+      </ul>
+
+    </div>
+
+
+    <!-- QUICK LINKS -->
+
+    <div class="footer-box right-anim">
+
+      <h2>Quick Links</h2>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+    </div>
+    <!-- ADDRESS -->
+    <div class="footer-box right-anim">
+
+      <h2>Address</h2>
+
+      <div class="address-row">
+        <i class="fa-solid fa-location-dot"></i>
+
+        <div class="address-text">
+          2-4-337/338, Office No.1<br>
+          Vijaya Vishnu Residency<br>
+          Ramgopalpet, M.G Road<br>
+          Secunderabad - 03
+        </div>
+      </div>
+
+
+      <div class="contact-row">
+        <i class="fa-solid fa-phone"></i>
+
+        <div class="contact-text">
+          +91 98483 90107<br>
+          +91 98852 71152
+        </div>
+      </div>
+
+
+      <div class="contact-row">
+        <i class="fa-solid fa-envelope"></i>
+
+        <div class="contact-text">
+          info@oystopartitions.com<br>
+          Sales@oystopartitions.com
+        </div>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://www.youtube.com/" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 Oysto Partitions. All Rights Reserved |
+      Designed and Developed by
+      <a href="https://nfosoft.com" target="_blank">nfosoft Innovations</a>
+    </p>
+
+  </div>
+
+</footer>
+
+
+<script>
+  const left = document.querySelectorAll(".left-anim");
+  const right = document.querySelectorAll(".right-anim");
+
+  function revealFooter() {
+
+    left.forEach(el => {
+
+      const pos = el.getBoundingClientRect().top;
+
+      if (pos < window.innerHeight - 100) {
+        el.classList.add("show-left");
+      }
+
+    });
+
+    right.forEach(el => {
+
+      const pos = el.getBoundingClientRect().top;
+
+      if (pos < window.innerHeight - 100) {
+        el.classList.add("show-right");
+      }
+
+    });
+
+  }
+
+  window.addEventListener("scroll", revealFooter);
+</script>
+
+
+
+
+
+<!-- Floating Buttons -->
+
+<a href="https://wa.me/919885271152" class="float-whatsapp" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<a href="tel:+919885271152" class="float-phone">
+  <i class="fa-solid fa-phone"></i>
+</a>

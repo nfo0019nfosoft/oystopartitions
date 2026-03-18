@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Door
+    | Oysto PARTITIONS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <link rel="stylesheet" href="css/sleekseries.css">
+
+</head>
+
+<body>
+
+
+  <header id="navbar">
+
+    <div class="nav-container">
+
+      <!-- LOGO -->
+
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Company Logo">
+        </a>
+      </div>
+
+
+      <!-- NAV LINKS -->
+
+      <ul class="nav-links">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="about.html">About Us</a></li>
+
+
+        <li class="dropdown">
+
+          <a href="product.html">Products ▾</a>
+
+          <div class="dropdown-menu">
+
+            <a href="sleekeries.html" class="dropdown-item">Sleek Series</a>
+
+            <a href="ecoseries-45.html" class="dropdown-item">Eco Series - 45</a>
+
+            <a href="ultraseries-75.html" class="dropdown-item">Ultra Series - 75</a>
+
+            <a href="neonseries-100.html" class="dropdown-item">Neon Series - 100</a>
+
+            <a href="styledoor.html" class="dropdown-item">Style Door</a>
+
+            <a href="technicalpanel.html" class="dropdown-item">Technical Panel</a>
+
+            <a href="architecturalhardware.html" class="dropdown-item">Architectural Hardware</a>
+
+            <a href="accessories.html" class="dropdown-item">Accessories</a>
+
+          </div>
+
+        </li>
+
+
+        <li><a href="contact.html">Contact Us</a></li>
+
+      </ul>
+
+
+      <!-- MOBILE MENU -->
+
+      <div class="menu-toggle">
+        ☰
+      </div>
+
+
+    </div>
+
+  </header>
+
+
+
+  <script>
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    const navbar = document.getElementById("navbar");
+
+    /* MOBILE MENU */
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    /* MOBILE DROPDOWN */
+
+    const dropdown = document.querySelector(".dropdown > a");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+
+dropdown.addEventListener("click", function(e){
+
+if(window.innerWidth <= 768){
+
+// first click → dropdown open
+if(!dropdownMenu.classList.contains("show")){
+e.preventDefault();
+dropdownMenu.classList.add("show");
+}
+
+// second click → open product page
+
+}
+
+});
+
+    /* NAVBAR SCROLL EFFECT */
+
+    window.addEventListener("scroll", () => {
+
+      if (window.scrollY > 80) {
+        navbar.classList.add("navbar-scrolled");
+      } else {
+        navbar.classList.remove("navbar-scrolled");
+      }
+
+    });
+
+  </script>
+
+
+
+
+
+
+
+
+  <!-- HERO -->
+
+  <section class="products-hero">
+
+    <div class="hero-overlay"></div>
+
+   
+
+<div class="hero-text">
+  <h1>Style Door</h1>
+  <p>“Style Door – Elegant glass door solutions designed for modern office interiors.”</p>
+</div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="premium-sleek">
+    <div class="glass-bg-text">OYSTO</div>
+
+    <div class="sleek-wrapper">
+      <div class="content-panel reveal-left">
+        <span class="subtitle">MODULAR SYSTEMS</span>
+        <h2 class="title">Style<span class="thin">  Door</span></h2>
+        <p class="description">
+          OYSTO Style door frame is the new alternative for the aging solid wooden door with similar sound insulation
+          abilities at a relatively better price point. It can be used as a swing as well as a sliding door. It consists
+          of a 75x44 mm profile to be used as a four sided frame with a layer of glass within the
+          frame.
+        </p>
+
+        <div class="card-grid">
+
+          <div class="info-card">
+            <span class="card-title">PROFILE</span>
+            <span class="card-value">75 x 44 mm </span>
+          </div>
+
+          <div class="info-card">
+            <span class="card-title">FINISHES</span>
+            <span class="card-value">Silver / Black / Other Anodised</span>
+          </div>
+
+          <div class="info-card">
+            <span class="card-title">DOOR TYPE</span>
+            <span class="card-value">Single Glazed Door</span>
+          </div>
+
+          <div class="info-card">
+            <span class="card-title">GLASS THICKNESS</span>
+            <span class="card-value">8 mm, 10 mm</span>
+          </div>
+
+
+          <div class="info-card">
+            <span class="card-title">MAX SIZE</span>
+            <span class="card-value"> Upto 3000 mm</span>
+          </div>
+
+        </div>
+      </div>
+    
+    <div class="image-panel reveal-right">
+      <div class="main-frame expand-trigger">
+        <img src="images/door1.png" alt="Main Office" class="zoom-img">
+        <div class="zoom-tag">Click to expand</div>
+      </div>
+
+      <div class="side-images">
+        <div class="small-frame expand-trigger">
+          <img src="images/door2.png" alt="Detail 1" class="zoom-img">
+          <div class="zoom-tag">Click to expand</div>
+        </div>
+
+        <div class="small-frame expand-trigger">
+          <img src="images/door3.png" alt="Detail 2" class="zoom-img">
+          <div class="zoom-tag">Click to expand</div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <div id="imgModal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="popupImg">
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Scroll Animation
+      const reveals = document.querySelectorAll(".reveal-left, .reveal-right");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(entry.target.classList.contains('reveal-left') ? 'show-left' : 'show-right');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      reveals.forEach(el => observer.observe(el));
+
+      // Multi-Image Popup Logic
+      const modal = document.getElementById("imgModal");
+      const popupImg = document.getElementById("popupImg");
+      const closeBtn = document.querySelector(".modal-close");
+      const triggers = document.querySelectorAll(".expand-trigger");
+
+      triggers.forEach(trigger => {
+        trigger.onclick = function () {
+          modal.style.display = "flex";
+          popupImg.src = this.querySelector("img").src;
+        }
+      });
+
+      closeBtn.onclick = () => modal.style.display = "none";
+      modal.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; }
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="premium-sleek">
+    <div class="glass-bg-text">OYSTO</div>
+
+    <div class="sleek-wrapper">
+      <div class="content-panel reveal-left">
+        <span class="subtitle">MODULAR SYSTEMS</span>
+        <h2 class="title">Style<span class="thin">  Door 65x35</span></h2>
+     
+        <p class="description">
+          OYSTO Style Door 65x35 modular aluminum framed door system is designed to complement modern glass partition solutions.
+          It offers excellent strength, durability, and a sleek appearance suitable for contemporary office interiors.
+          The system is engineered to provide smooth operation and a clean, minimal design that enhances the overall workspace environment.
+
+It consists of a 65x35 mm aluminum profile section that supports toughened glass panels and ensures structural stability.
+ The clip-on installation system allows quick and efficient door fitting, making it ideal for office cabins, meeting rooms, 
+ and commercial spaces.
+        </p>
+
+        <div class="card-grid">
+
+          <div class="info-card">
+            <span class="card-title">PROFILE</span>
+            <span class="card-value">65 x 35 mm</span>
+          </div>
+
+          <div class="info-card">
+            <span class="card-title">FINISHES</span>
+            <span class="card-value">Silver / Black / Other Anodised</span>
+          </div>
+
+          <div class="info-card">
+            <span class="card-title">DOOR TYPE</span>
+            <span class="card-value">Sutter Door</span>
+          </div>
+
+          <div class="info-card">
+            <span class="card-title">GLASS THICKNESS</span>
+            <span class="card-value">8 mm, 10 mm</span>
+          </div>
+
+        
+          <div class="info-card">
+            <span class="card-title">MAX SIZE</span>
+            <span class="card-value">Upto 3000 mm</span>
+          </div>
+
+        </div>
+      </div>
+    
+    <div class="image-panel reveal-right">
+      <div class="main-frame expand-trigger">
+        <img src="images/door4.png" alt="Main Office" class="zoom-img">
+        <div class="zoom-tag">Click to expand</div>
+      </div>
+
+      <div class="side-images">
+        <div class="small-frame expand-trigger">
+          <img src="images/door5.png" alt="Detail 1" class="zoom-img">
+          <div class="zoom-tag">Click to expand</div>
+        </div>
+
+        <div class="small-frame expand-trigger">
+          <img src="images/door6.png" alt="Detail 2" class="zoom-img">
+          <div class="zoom-tag">Click to expand</div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <div id="imgModal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="popupImg">
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Scroll Animation
+      const reveals = document.querySelectorAll(".reveal-left, .reveal-right");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(entry.target.classList.contains('reveal-left') ? 'show-left' : 'show-right');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      reveals.forEach(el => observer.observe(el));
+
+      // Multi-Image Popup Logic
+      const modal = document.getElementById("imgModal");
+      const popupImg = document.getElementById("popupImg");
+      const closeBtn = document.querySelector(".modal-close");
+      const triggers = document.querySelectorAll(".expand-trigger");
+
+      triggers.forEach(trigger => {
+        trigger.onclick = function () {
+          modal.style.display = "flex";
+          popupImg.src = this.querySelector("img").src;
+        }
+      });
+
+      closeBtn.onclick = () => modal.style.display = "none";
+      modal.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; }
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="engineering"> 
+<div class="eng-container">
+
+<h2 class="engineering-title">Engineering Highlights</h2>
+
+<div class="engineering-line">
+
+<div class="eng-item reveal">
+<div class="eng-icon">
+<i class="fa-solid fa-door-open"></i>
+</div>
+<h3>Strong Door Profiles</h3>
+<p>42×75mm, 40×75mm and 30×65mm aluminum frame profiles.</p>
+</div>
+
+<div class="eng-item reveal">
+<div class="eng-icon">
+<i class="fa-solid fa-ruler-combined"></i>
+</div>
+<h3>Glass Compatibility</h3>
+<p>Supports 8mm and 10mm glass panels.</p>
+</div>
+
+
+<div class="eng-item reveal">
+<div class="eng-icon">
+<i class="fa-solid fa-right-left"></i>
+</div>
+<h3>Flexible Door Use</h3>
+<p>Can be used as swing or sliding glass doors.</p>
+</div>
+
+<div class="eng-item reveal">
+<div class="eng-icon">
+<i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+</div>
+<h3>Large Door Size</h3>
+<p>Supports door size <br>Upto 3000 mm.</p>
+</div>
+
+</div>
+</div>
+
+</section>
+
+  <script>
+    const reveals = document.querySelectorAll(".reveal");
+
+    window.addEventListener("scroll", () => {
+
+      reveals.forEach(el => {
+
+        const pos = el.getBoundingClientRect().top;
+
+        if (pos < window.innerHeight - 100) {
+          el.classList.add("active");
+        }
+
+      });
+
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="cta-section">
+
+    <div class="cta-container">
+
+      <h2>Request a Quote</h2>
+
+      <p>
+        Looking for modern glass partition solutions for your office or commercial
+        space? Get in touch with our experts today and receive a customized quote.
+      </p>
+
+      <a href="contact.html" class="cta-btn">
+        <i class="fa-solid fa-paper-plane"></i> Get a Quote
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <script>
+
+    const cta = document.querySelector(".cta-section");
+
+    window.addEventListener("scroll", () => {
+
+      const top = cta.getBoundingClientRect().top;
+
+      if (top < window.innerHeight - 100) {
+        cta.classList.add("cta-show");
+      }
+
+    });
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<!-- LOGO -->
+
+<div class="footer-box left-anim">
+
+<img src="images/logo.png" class="footer-logo">
+
+<p>
+Premium office partitions and modular solutions
+for modern workplaces.
+</p>
+
+</div>
+
+
+<!-- PRODUCTS -->
+
+<div class="footer-box left-anim">
+
+<h2>Products</h2>
+<ul>
+<li><a href="sleekeries.html">Sleek Series</a></li>
+
+<li><a href="ecoseries-45.html">Eco Series - 45</a></li>
+
+<li><a href="ultraseries-75.html">Ultra Series - 75</a></li>
+
+<li><a href="neonseries-100.html">Neon Series - 100</a></li>
+
+<li><a href="styledoor.html">Style Door</a></li>
+
+<li><a href="technicalpanel.html">Technical Panel</a></li>
+
+<li><a href="architecturalhardware.html">Architectural Hardware</a></li>
+
+<li><a href="accessories.html">Accessories</a></li>
+</ul>
+
+</div>
+
+
+<!-- QUICK LINKS -->
+
+<div class="footer-box right-anim">
+
+<h2>Quick Links</h2>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="product.html">Products</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+</div>
+<!-- ADDRESS -->
+<div class="footer-box right-anim">
+
+<h2>Address</h2>
+
+<div class="address-row">
+<i class="fa-solid fa-location-dot"></i>
+
+<div class="address-text">
+2-4-337/338, Office No.1<br>
+Vijaya Vishnu Residency<br>
+Ramgopalpet, M.G Road<br>
+Secunderabad - 03
+</div>
+</div>
+
+
+<div class="contact-row">
+<i class="fa-solid fa-phone"></i>
+
+<div class="contact-text">
++91 98483 90107<br>
++91 98852 71152
+</div>
+</div>
+
+
+<div class="contact-row">
+<i class="fa-solid fa-envelope"></i>
+
+<div class="contact-text">
+info@oystopartitions.com<br>
+Sales@oystopartitions.com
+</div>
+</div>
+<div class="social">
+<a href="https://www.facebook.com/" target="_blank">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a href="https://www.instagram.com/" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://www.youtube.com/" target="_blank">
+<i class="fa-brands fa-youtube"></i>
+</a>
+</div>
+
+</div>
+</div>
+
+
+<div class="footer-bottom">
+
+<p>
+© 2026 Oysto Partitions. All Rights Reserved |
+Designed and Developed by
+<a href="https://nfosoft.com" target="_blank">nfosoft Innovations</a>
+</p>
+
+</div>
+
+</footer>
+
+
+<script>
+    const left = document.querySelectorAll(".left-anim");
+const right = document.querySelectorAll(".right-anim");
+
+function revealFooter(){
+
+left.forEach(el=>{
+
+const pos = el.getBoundingClientRect().top;
+
+if(pos < window.innerHeight - 100){
+el.classList.add("show-left");
+}
+
+});
+
+right.forEach(el=>{
+
+const pos = el.getBoundingClientRect().top;
+
+if(pos < window.innerHeight - 100){
+el.classList.add("show-right");
+}
+
+});
+
+}
+
+window.addEventListener("scroll", revealFooter);
+</script>
+
+
+
+
+
+<!-- Floating Buttons -->
+
+<a href="https://wa.me/919885271152" class="float-whatsapp" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<a href="tel:+919885271152" class="float-phone">
+<i class="fa-solid fa-phone"></i>
+</a>

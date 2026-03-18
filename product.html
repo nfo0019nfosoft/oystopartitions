@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | Oysto PARTITIONS</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="icon" type="image/png" href="images/logo.png">
+
+<link rel="stylesheet" href="css/product.css">
+
+</head>
+
+<body>
+
+
+<header id="navbar">
+
+<div class="nav-container">
+
+<!-- LOGO -->
+
+<div class="logo">
+<a href="index.html">
+<img src="images/logo.png" alt="Company Logo">
+</a>
+</div>
+
+
+<!-- NAV LINKS -->
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About Us</a></li>
+
+
+<li class="dropdown">
+
+<a href="product.html">Products  ▾</a>
+
+<div class="dropdown-menu">
+
+<a href="sleekeries.html" class="dropdown-item">Sleek Series</a>
+
+<a href="ecoseries-45.html" class="dropdown-item">Eco Series - 45</a>
+
+<a href="ultraseries-75.html" class="dropdown-item">Ultra Series - 75</a>
+
+<a href="neonseries-100.html" class="dropdown-item">Neon Series - 100</a>
+
+<a href="styledoor.html" class="dropdown-item">Style Door</a>
+
+<a href="technicalpanel.html" class="dropdown-item">Technical Panel</a>
+
+<a href="architecturalhardware.html" class="dropdown-item">Architectural Hardware</a>
+
+<a href="accessories.html" class="dropdown-item">Accessories</a>
+
+</div>
+</li>
+
+<li><a href="contact.html">Contact Us</a></li>
+
+</ul>
+
+
+<!-- MOBILE MENU -->
+
+<div class="menu-toggle">
+☰
+</div>
+
+
+</div>
+
+</header>
+
+
+
+<script>
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const navbar = document.getElementById("navbar");
+
+/* MOBILE MENU */
+
+menuToggle.addEventListener("click", () => {
+navLinks.classList.toggle("active");
+});
+
+/* MOBILE DROPDOWN */
+const dropdown = document.querySelector(".dropdown > a");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+
+dropdown.addEventListener("click", function(e){
+
+if(window.innerWidth <= 768){
+
+// first click → dropdown open
+if(!dropdownMenu.classList.contains("show")){
+e.preventDefault();
+dropdownMenu.classList.add("show");
+}
+
+// second click → open product page
+
+}
+
+});
+/* NAVBAR SCROLL EFFECT */
+
+window.addEventListener("scroll", () => {
+
+if(window.scrollY > 80){
+navbar.classList.add("navbar-scrolled");
+}else{
+navbar.classList.remove("navbar-scrolled");
+}
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- HERO -->
+
+<section class="products-hero">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-text">
+<h1>OUR PRODUCTS</h1>
+<p>Premium Office Partition Solutions</p>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="why-oysto">
+
+<div class="why-container">
+
+<h2 class="why-title">Why Choose Oysto Partitions</h2>
+
+<div class="why-grid">
+
+<div class="why-card reveal2">
+<i class="fa-solid fa-layer-group"></i>
+<h3>Modular Systems</h3>
+<p>Flexible partition systems designed for modern workspaces.</p>
+</div>
+
+<div class="why-card reveal2">
+<i class="fa-solid fa-window-maximize"></i>
+<h3>Elegant Glass Design</h3>
+<p>Frameless glass partitions that enhance workspace aesthetics.</p>
+</div>
+
+<div class="why-card reveal2">
+<i class="fa-solid fa-volume-high"></i>
+<h3>Acoustic Comfort</h3>
+<p>Engineered glass systems that reduce noise and improve privacy.</p>
+</div>
+
+<div class="why-card reveal2">
+<i class="fa-solid fa-screwdriver-wrench"></i>
+<h3>Easy Installation</h3>
+<p>Quick installation with minimal disruption to office operations.</p>
+</div>
+
+<div class="why-card reveal2">
+<i class="fa-solid fa-building"></i>
+<h3>Architectural Quality</h3>
+<p>Premium aluminum profiles and glass systems for durability.</p>
+</div>
+
+<div class="why-card reveal2">
+<i class="fa-solid fa-lightbulb"></i>
+<h3>Modern Workspaces</h3>
+<p>Creating stylish and functional office environments.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+/* SCROLL ANIMATION */
+
+const revealCards = document.querySelectorAll(".reveal2");
+
+window.addEventListener("scroll", () => {
+
+revealCards.forEach(card => {
+
+const pos = card.getBoundingClientRect().top;
+
+if(pos < window.innerHeight - 100){
+card.classList.add("active2");
+}
+
+});
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="products-section">
+
+<div class="glass-icons-bg">
+
+<i class="fa-solid fa-window-maximize"></i>
+<i class="fa-solid fa-border-all"></i>
+<i class="fa-solid fa-table-columns"></i>
+<i class="fa-solid fa-vector-square"></i>
+<i class="fa-solid fa-layer-group"></i>
+
+</div>
+<h2 class="products-title">OUR PRODUCT RANGE</h2>
+
+<div class="products-grid">
+
+<!-- 1 -->
+
+<div class="product-box reveal">
+<img src="images/img2.png">
+
+<div class="product-name">Sleek Series</div>
+
+<div class="product-overlay">
+<h3>Sleek Series</h3>
+<p>Elegant glass partition systems for modern workspaces.</p>
+<a href="sleekeries.html" class="product-btn">View Product</a>
+</div>
+
+</div>
+
+
+<!-- 2 -->
+
+<div class="product-box reveal">
+<img src="images/eco1.png">
+
+<div class="product-name">Eco Series - 45</div>
+
+<div class="product-overlay">
+<h3>Eco Series - 45</h3>
+<p>Cost-efficient modular partitions for flexible office layouts.</p>
+<a href="ecoseries-45.html" class="product-btn">View Product</a>
+</div>
+
+</div>
+
+
+<!-- 3 -->
+
+<div class="product-box reveal">
+<img src="images/ultra1.png">
+
+<div class="product-name">Ultra Series - 75</div>
+
+<div class="product-overlay">
+<h3>Ultra Series - 75</h3>
+<p>High performance acoustic partition system.</p>
+<a href="ultraseries-75.html" class="product-btn">View Product</a>
+</div>
+
+</div>
+
+
+<!-- 4 -->
+
+<div class="product-box reveal">
+<img src="images/neon1.png">
+
+<div class="product-name">Neon Series - 100</div>
+
+<div class="product-overlay">
+<h3>Neon Series - 100</h3>
+<p>Premium office partition solution for large offices.</p>
+<a href="neonseries-100.html" class="product-btn">View Product</a>
+</div>
+
+</div>
+
+
+<!-- 5 -->
+
+<div class="product-box reveal">
+<img src="images/door1.png">
+
+<div class="product-name">Style Door</div>
+
+<div class="product-overlay">
+<h3>Style Door</h3>
+<p>Stylish glass doors designed for partitions.</p>
+<a href="styledoor.html" class="product-btn">View Product</a>
+</div>
+
+</div>
+
+
+<!-- 6 -->
+
+<div class="product-box reveal">
+<img src="images/techpanel1.png">
+
+<div class="product-name">Technical Panel</div>
+
+<div class="product-overlay">
+<h3>Technical Panel</h3>
+<p>Advanced panels for modern office environments.</p>
+<a href="technicalpanel.html" class="product-btn">View Product</a>
+</div>
+
+</div>
+
+
+<!-- 7 -->
+
+<div class="product-box reveal">
+<img src="images/img1.png">
+
+<div class="product-name">Architectural Hardware</div>
+
+<div class="product-overlay">
+<h3>Architectural Hardware</h3>
+<p>Premium quality fittings for partitions.</p>
+<a href="architecturalhardware.html" class="product-btn">View Product</a>
+</div>
+
+</div>
+
+
+<!-- 8 -->
+
+<div class="product-box reveal">
+<img src="images/acce1.png">
+
+<div class="product-name">Accessories</div>
+
+<div class="product-overlay">
+<h3>Accessories</h3>
+<p>Essential accessories for complete partition systems.</p>
+<a href="accessories.html" class="product-btn">View Product</a>
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+<script>
+  const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+
+reveals.forEach(el => {
+
+const pos = el.getBoundingClientRect().top;
+
+if(pos < window.innerHeight - 100){
+el.classList.add("active");
+}
+
+});
+
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="applications-section">
+
+<div class="applications-container">
+
+<h2 class="applications-title">Where Our Partitions Are Used</h2>
+
+<div class="applications-grid">
+
+<div class="app-card reveal4">
+<i class="fa-solid fa-building"></i>
+<h3>Corporate Offices</h3>
+<p>Modern glass partitions for stylish office interiors.</p>
+</div>
+
+<div class="app-card reveal4">
+<i class="fa-solid fa-people-group"></i>
+<h3>Meeting Rooms</h3>
+<p>Transparent meeting rooms with acoustic comfort.</p>
+</div>
+
+<div class="app-card reveal4">
+<i class="fa-solid fa-hospital"></i>
+<h3>Hospitals</h3>
+<p>Clean and durable partitions for healthcare spaces.</p>
+</div>
+
+<div class="app-card reveal4">
+<i class="fa-solid fa-store"></i>
+<h3>Commercial Spaces</h3>
+<p>Glass systems for malls and commercial interiors.</p>
+</div>
+
+<div class="app-card reveal4">
+<i class="fa-solid fa-couch"></i>
+<h3>Showrooms</h3>
+<p>Elegant glass partitions for product display areas.</p>
+</div>
+
+<div class="app-card reveal4">
+<i class="fa-solid fa-briefcase"></i>
+<h3>Executive Cabins</h3>
+<p>Premium partitions for private office cabins.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+const appCards = document.querySelectorAll(".reveal4");
+
+window.addEventListener("scroll", () => {
+
+appCards.forEach(card => {
+
+const pos = card.getBoundingClientRect().top;
+
+if(pos < window.innerHeight - 100){
+card.classList.add("active4");
+}
+
+});
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<!-- LOGO -->
+
+<div class="footer-box left-anim">
+
+<img src="images/logo.png" class="footer-logo">
+
+<p>
+Premium office partitions and modular solutions
+for modern workplaces.
+</p>
+
+</div>
+
+
+<!-- PRODUCTS -->
+
+<div class="footer-box left-anim">
+
+<h2>Products</h2>
+<ul>
+<li><a href="sleekeries.html">Sleek Series</a></li>
+
+<li><a href="ecoseries-45.html">Eco Series - 45</a></li>
+
+<li><a href="ultraseries-75.html">Ultra Series - 75</a></li>
+
+<li><a href="neonseries-100.html">Neon Series - 100</a></li>
+
+<li><a href="styledoor.html">Style Door</a></li>
+
+<li><a href="technicalpanel.html">Technical Panel</a></li>
+
+<li><a href="architecturalhardware.html">Architectural Hardware</a></li>
+
+<li><a href="accessories.html">Accessories</a></li>
+</ul>
+
+</div>
+
+
+<!-- QUICK LINKS -->
+
+<div class="footer-box right-anim">
+
+<h2>Quick Links</h2>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="product.html">Products</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+</div>
+<!-- ADDRESS -->
+<div class="footer-box right-anim">
+
+<h2>Address</h2>
+
+<div class="address-row">
+<i class="fa-solid fa-location-dot"></i>
+
+<div class="address-text">
+2-4-337/338, Office No.1<br>
+Vijaya Vishnu Residency<br>
+Ramgopalpet, M.G Road<br>
+Secunderabad - 03
+</div>
+</div>
+
+
+<div class="contact-row">
+<i class="fa-solid fa-phone"></i>
+
+<div class="contact-text">
++91 98483 90107<br>
++91 98852 71152
+</div>
+</div>
+
+
+<div class="contact-row">
+<i class="fa-solid fa-envelope"></i>
+
+<div class="contact-text">
+info@oystopartitions.com<br>
+Sales@oystopartitions.com
+</div>
+</div>
+<div class="social">
+<a href="https://www.facebook.com/" target="_blank">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a href="https://www.instagram.com/" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://www.youtube.com/" target="_blank">
+<i class="fa-brands fa-youtube"></i>
+</a>
+</div>
+
+</div>
+</div>
+
+
+<div class="footer-bottom">
+
+<p>
+© 2026 Oysto Partitions. All Rights Reserved |
+Designed and Developed by
+<a href="https://nfosoft.com" target="_blank">nfosoft Innovations</a>
+</p>
+
+</div>
+
+</footer>
+
+
+<script>
+    const left = document.querySelectorAll(".left-anim");
+const right = document.querySelectorAll(".right-anim");
+
+function revealFooter(){
+
+left.forEach(el=>{
+
+const pos = el.getBoundingClientRect().top;
+
+if(pos < window.innerHeight - 100){
+el.classList.add("show-left");
+}
+
+});
+
+right.forEach(el=>{
+
+const pos = el.getBoundingClientRect().top;
+
+if(pos < window.innerHeight - 100){
+el.classList.add("show-right");
+}
+
+});
+
+}
+
+window.addEventListener("scroll", revealFooter);
+</script>
+
+
+
+
+
+<!-- Floating Buttons -->
+
+<a href="https://wa.me/919885271152" class="float-whatsapp" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<a href="tel:+919885271152" class="float-phone">
+<i class="fa-solid fa-phone"></i>
+</a>

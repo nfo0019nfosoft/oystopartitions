@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OYSTO PARTITIONS</title>
+
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+
+<header id="navbar">
+
+<div class="nav-container">
+
+<!-- LOGO -->
+
+<div class="logo">
+<a href="index.html">
+<img src="images/logo.png" alt="Company Logo">
+</a>
+</div>
+
+
+<!-- NAV LINKS -->
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About Us</a></li>
+
+
+<li class="dropdown">
+
+<a href="product.html">Products  ▾</a>
+
+<div class="dropdown-menu">
+
+<a href="sleekeries.html" class="dropdown-item">Sleek Series</a>
+
+<a href="ecoseries-45.html" class="dropdown-item">Eco Series - 45</a>
+
+<a href="ultraseries-75.html" class="dropdown-item">Ultra Series - 75</a>
+
+<a href="neonseries-100.html" class="dropdown-item">Neon Series - 100</a>
+
+<a href="styledoor.html" class="dropdown-item">Style Door</a>
+
+<a href="technicalpanel.html" class="dropdown-item">Technical Panel</a>
+
+<a href="architecturalhardware.html" class="dropdown-item">Architectural Hardware</a>
+
+<a href="accessories.html" class="dropdown-item">Accessories</a>
+
+</div>
+</li>
+
+
+<li><a href="contact.html">Contact Us</a></li>
+
+</ul>
+
+
+<!-- MOBILE MENU -->
+
+<div class="menu-toggle">
+☰
+</div>
+
+
+</div>
+
+</header>
+
+<script>
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const navbar = document.getElementById("navbar");
+
+/* MOBILE MENU */
+
+menuToggle.addEventListener("click", () => {
+navLinks.classList.toggle("active");
+});
+
+/* MOBILE DROPDOWN */
+const dropdown = document.querySelector(".dropdown > a");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+
+dropdown.addEventListener("click", function(e){
+
+if(window.innerWidth <= 768){
+
+// first click → dropdown open
+if(!dropdownMenu.classList.contains("show")){
+e.preventDefault();
+dropdownMenu.classList.add("show");
+}
+
+// second click → open product page
+
+}
+
+});
+
+/* NAVBAR SCROLL EFFECT */
+
+
+
+
+window.addEventListener("scroll", () => {
+
+if(window.scrollY > 80){
+navbar.classList.add("navbar-scrolled");
+}else{
+navbar.classList.remove("navbar-scrolled");
+}
+
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="hero">
+    <div class="hero-slider">
+        <div class="hero-track">
+
+            <!-- 1 -->
+            <div class="hero-slide">
+                <img src="images/img1.png">
+                <div class="ovrlay"></div>
+                <div class="hero-content">
+                    <h1>Modern Glass Partition Systems</h1>
+                    <p>Elegant • Durable • Corporate Solutions</p>
+                    <a href="product.html" class="hero-btn">Explore Products</a>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="hero-slide">
+                <img src="images/door1.png">
+                <div class="ovrlay"></div>
+                <div class="hero-content">
+                    <h1>Modern Glass Partition Systems</h1>
+                    <p>Elegant • Durable • Corporate Solutions</p>
+                    <a href="product.html" class="hero-btn">Explore Products</a>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="hero-slide">
+                <img src="images/door3.png">
+                <div class="ovrlay"></div>
+                <div class="hero-content">
+                    <h1>Modern Glass Partition Systems</h1>
+                    <p>Elegant • Durable • Corporate Solutions</p>
+                    <a href="product.html" class="hero-btn">Explore Products</a>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="hero-slide">
+                <img src="images/neon1.png">
+                <div class="ovrlay"></div>
+                <div class="hero-content">
+                    <h1>Modern Glass Partition Systems</h1>
+                    <p>Elegant • Durable • Corporate Solutions</p>
+                    <a href="product.html" class="hero-btn">Explore Products</a>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="hero-slide">
+                <img src="images/door2.png">
+                <div class="ovrlay"></div>
+                <div class="hero-content">
+                    <h1>Modern Glass Partition Systems</h1>
+                    <p>Elegant • Durable • Corporate Solutions</p>
+                    <a href="product.html" class="hero-btn">Explore Products</a>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="hero-slide">
+                <img src="images/techpanel1.png">
+                <div class="ovrlay"></div>
+                <div class="hero-content">
+                    <h1>Modern Glass Partition Systems</h1>
+                    <p>Elegant • Durable • Corporate Solutions</p>
+                    <a href="product.html" class="hero-btn">Explore Products</a>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="hero-slide">
+                <img src="images/hero1.png">
+                <div class="ovrlay"></div>
+                <div class="hero-content">
+                    <h1>Modern Glass Partition Systems</h1>
+                    <p>Elegant • Durable • Corporate Solutions</p>
+                    <a href="product.html" class="hero-btn">Explore Products</a>
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="hero-slide">
+                <img src="images/hero2.png">
+                <div class="ovrlay"></div>
+                <div class="hero-content">
+                    <h1>Modern Glass Partition Systems</h1>
+                    <p>Elegant • Durable • Corporate Solutions</p>
+                    <a href="product.html" class="hero-btn">Explore Products</a>
+                </div>
+            </div>
+
+            <!-- CLONE -->
+            <div class="hero-slide">
+                <img src="images/img1.png">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<script>
+  const track = document.querySelector(".hero-track");
+const slides = document.querySelectorAll(".hero-slide");
+
+let index = 0;
+
+function slideHero(){
+index++;
+track.style.transform = `translateX(-${index * 100}vw)`;
+
+if(index === slides.length - 1){
+setTimeout(()=>{
+track.style.transition="none";
+track.style.transform="translateX(0)";
+index=0;
+
+setTimeout(()=>{
+track.style.transition="transform 0.7s ease-in-out";
+},50);
+
+},700);
+}
+}
+
+setInterval(slideHero,3500);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="about-section">
+
+<div class="about-container">
+
+<div class="about-image">
+<img src="images/about.png" alt="Glass Partition">
+</div>
+
+
+<div class="about-content">
+
+<h2>About OYSTO</h2>
+
+<p>
+<p>
+
+<b>OYSTO</b> is among the pioneering suppliers of architectural interior products and solutions designed for modern commercial and office environments. Our systems are developed to create beautiful, functional, and well-organized interior spaces that enhance productivity and visual appeal. We assist <b>architects, designers, and project consultants</b> by offering a wide range of customized solutions tailored to the requirements of each workspace and project.
+
+</p>
+
+<p>
+
+Our <b>Modular Glass Partition Systems</b> are designed to provide flexible and efficient space management for offices, hospitals, and commercial establishments. These partitions allow easy installation, modification, and rearrangement whenever workspace requirements change. In addition to partition systems, OYSTO also provides <b>aluminum skirting, interior accessories, and door hardware solutions</b> that integrate seamlessly with modern interior designs to deliver a refined and professional finish.
+
+</p>
+
+
+<a href="about.html" class="about-btn">Learn More</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<script>
+
+const aboutSection = document.querySelector(".about-section");
+
+window.addEventListener("scroll", () => {
+
+const sectionTop = aboutSection.getBoundingClientRect().top;
+
+if(sectionTop < window.innerHeight - 100){
+aboutSection.classList.add("show");
+}
+
+});
+
+</script>
+
+
+
+<section class="products-section">
+    
+<div class="products-container">
+<h2 class="products-title">Our Products</h2>
+
+<div class="products-grid">
+
+
+<!-- PRODUCT 1 -->
+<div class="product-card">
+
+<div class="img-box">
+<img src="images/img2.png">
+
+<div class="overlay">
+<h3>Sleek Series - 25mm x 25mm</h3>
+
+<ul class="product-features">
+<li><i class="fa-solid fa-window-maximize"></i> Slim Aluminium Glass Partition</li>
+<li><i class="fa-solid fa-layer-group"></i> Modern Office Interior System</li>
+
+    <!-- NEW POINTS -->
+    <li><i class="fa-solid fa-ruler"></i> Profile: 25mm x 25mm</li>
+    <li><i class="fa-solid fa-window-restore"></i> Glass: 10/12mm Toughened</li>
+  </ul>
+
+  <!-- BUTTON -->
+  <a href="sleekseries.html" class="view-btn">View Product</a>
+
+
+
+</div>
+</div>
+
+<p class="product-name">Sleek Series - 25mm x 25mm</p>
+</div>
+
+
+<!-- PRODUCT 2 -->
+<div class="product-card">
+
+<div class="img-box">
+<img src="images/eco1.png">
+
+<div class="overlay">
+<h3>Eco Series - 45</h3>
+
+<ul class="product-features">
+<li><i class="fa-solid fa-leaf"></i> Cost Effective Partition System</li>
+<li><i class="fa-solid fa-ruler-combined"></i> Compact Aluminium Profile</li>
+
+
+    <!-- NEW POINTS -->
+    <li><i class="fa-solid fa-ruler"></i> Profile: 25 x 45mm</li>
+    <li><i class="fa-solid fa-window-restore"></i> Glass: 8, 10 and 12 mm</li>
+  </ul>
+
+  <!-- BUTTON -->
+  <a href="ultraseries-75.html" class="view-btn">View Product</a>
+
+
+</div>
+</div>
+
+<p class="product-name">Eco Series - 45</p>
+</div>
+
+
+<!-- PRODUCT 3 -->
+<div class="product-card">
+
+<div class="img-box">
+<img src="images/ultra1.png">
+
+<div class="overlay">
+<h3>Ultra Series - 75</h3>
+
+<ul class="product-features">
+<li><i class="fa-solid fa-building"></i> Strong Aluminium Structure</li>
+<li><i class="fa-solid fa-volume-high"></i> High Acoustic Performance</li>
+
+    <!-- NEW POINTS -->
+    <li><i class="fa-solid fa-ruler"></i> Profile: 25 x 75 mm</li>
+    <li><i class="fa-solid fa-window-restore"></i> Glass: 8, 10 and 12 mm</li>
+  </ul>
+
+  <!-- BUTTON -->
+  <a href="ultraseries-75.html" class="view-btn">View Product</a>
+
+
+
+</div>
+</div>
+
+<p class="product-name">Ultra Series - 75</p>
+</div>
+
+
+<!-- PRODUCT 4 -->
+<div class="product-card">
+
+<div class="img-box">
+<img src="images/neon1.png">
+
+<div class="overlay">
+<h3>Neon Series - 100</h3>
+
+<ul class="product-features">
+<li><i class="fa-solid fa-gem"></i> Premium Aluminium Partition</li>
+<li><i class="fa-solid fa-layer-group"></i> Heavy Duty Glass System</li>
+
+    <!-- NEW POINTS -->
+    <li><i class="fa-solid fa-ruler"></i> Profile: 25 x 100 mm</li>
+    <li><i class="fa-solid fa-window-restore"></i> Glass: 8, 10 and 12 mm</li>
+  </ul>
+
+  <!-- BUTTON -->
+  <a href="neonseries-100.html" class="view-btn">View Product</a>
+
+
+
+</div>
+</div>
+
+<p class="product-name">Neon Series - 100</p>
+</div>
+
+
+<!-- PRODUCT 5 -->
+<div class="product-card">
+
+<div class="img-box">
+<img src="images/door1.png">
+
+<div class="overlay">
+<h3>Style Door</h3>
+
+<ul class="product-features">
+<li><i class="fa-solid fa-door-open"></i> Elegant Glass Door Design</li>
+<li><i class="fa-solid fa-lock"></i> Premium Hardware Support</li>
+
+    <!-- NEW POINTS -->
+    <li><i class="fa-solid fa-ruler"></i> Profile: 75x44 ,65x35 mm</li>
+    <li><i class="fa-solid fa-window-restore"></i> Glass: 8,10 mm</li>
+  </ul>
+
+  <!-- BUTTON -->
+  <a href="styledoor.html" class="view-btn">View Product</a>
+
+
+
+</div>
+</div>
+
+<p class="product-name">Style Door</p>
+</div>
+
+
+<!-- PRODUCT 6 -->
+<div class="product-card">
+
+<div class="img-box">
+<img src="images/techpanel1.png">
+
+<div class="overlay">
+<h3>Technical Panel</h3>
+
+<ul class="product-features">
+<li><i class="fa-solid fa-screwdriver-wrench"></i> Structural Panel System</li>
+<li><i class="fa-solid fa-cubes"></i> Modular Installation</li>
+
+    <!-- NEW POINTS -->
+    <li><i class="fa-solid fa-ruler"></i> Profile: 45 x 45,100 x 100 mm</li>
+    <li><i class="fa-solid fa-arrows-up-down"></i> Height: up to 3000mm</li>
+  </ul>
+
+  <!-- BUTTON -->
+  <a href="technicalpanel.html" class="view-btn">View Product</a>
+
+
+
+</div>
+</div>
+
+<p class="product-name">Technical Panel</p>
+</div>
+
+
+<!-- PRODUCT 7 -->
+<div class="product-card">
+
+<div class="img-box">
+<img src="images/hero1.png">
+
+<div class="overlay">
+<h3>Architectural Hardware</h3>
+
+<ul class="product-features">
+<li><i class="fa-solid fa-toolbox"></i> Glass Fittings & Connectors</li>
+<li><i class="fa-solid fa-screwdriver"></i> Patch Fittings & Clamps</li>
+
+    <!-- NEW POINTS -->
+    <li><i class="fa-solid fa-layer-group"></i>Material: Aluminum/Steel/Brass</li>
+    <li><i class="fa-solid fa-palette"></i> Finish: Silver/Satin/Black </li>
+  </ul>
+
+  <!-- BUTTON -->
+  <a href="architecturalhardware.html" class="view-btn">View Product</a>
+
+
+
+</div>
+</div>
+
+<p class="product-name">Architectural Hardware</p>
+</div>
+
+
+<!-- PRODUCT 8 -->
+<div class="product-card">
+
+<div class="img-box">
+<img src="images/hero2.png">
+
+<div class="overlay">
+<h3>Accessories</h3>
+
+<ul class="product-features">
+<li><i class="fa-solid fa-gears"></i> Partition System Components</li>
+<li><i class="fa-solid fa-toolbox"></i> Installation Accessories</li>
+
+    <!-- NEW POINTS -->
+   <li><i class="fa-solid fa-ruler"></i> Length: 3000 mm</li>
+
+<li><i class="fa-solid fa-palette"></i> Finish: Silver/Black/Grey</li>
+
+  </ul>
+
+  <!-- BUTTON -->
+  <a href="accessories.html" class="view-btn">View Product</a>
+
+
+
+</div>
+</div>
+
+<p class="product-name">Accessories</p>
+</div>
+
+
+</div>
+</div>
+
+</section>
+
+<script>
+
+const section = document.querySelector(".products-section");
+
+const observer = new IntersectionObserver((entries)=>{
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+section.classList.add("show");
+}
+
+});
+
+},{
+threshold:0.3
+});
+
+observer.observe(section);
+
+</script>
+
+<script>
+
+const cards = document.querySelectorAll(".product-card");
+
+const links = [
+"sleekeries.html",
+"ecoseries-45.html",
+"ultraseries-75.html",
+"neonseries-100.html",
+"styledoor.html",
+"technicalpanel.html",
+"architecturalhardware.html",
+"accessories.html"
+];
+
+cards.forEach((card,index)=>{
+
+card.addEventListener("click",()=>{
+
+window.location.href = links[index];
+
+});
+
+});
+
+</script>
+
+
+
+
+
+<section class="timeline-section">
+
+<h2 class="timeline-title">OUR METHODOLOGY</h2>
+
+<div class="timeline">
+
+<!-- STEP 1 -->
+
+<div class="timeline-row reveal">
+
+<div class="timeline-card left">
+
+<i class="fa-solid fa-comments icon"></i>
+
+<h3>Workspace Consultation</h3>
+
+<p>Analyzing spatial requirements and architectural goals for your workspace.</p>
+
+</div>
+
+<div class="timeline-number">01</div>
+
+</div>
+
+
+<!-- STEP 2 -->
+
+<div class="timeline-row reveal">
+
+<div class="timeline-card right">
+
+<i class="fa-solid fa-compass-drafting icon"></i>
+
+<h3>Concept & Layout</h3>
+
+<p>Developing digital blueprints that redefine modern office aesthetics.</p>
+
+</div>
+
+<div class="timeline-number">02</div>
+
+</div>
+
+
+<!-- STEP 3 -->
+
+<div class="timeline-row reveal">
+
+<div class="timeline-card left">
+
+<i class="fa-solid fa-ruler-combined icon"></i>
+
+<h3>Site Measurement</h3>
+
+<p>Precision on-site scanning to ensure a flawless structural fit.</p>
+
+</div>
+
+<div class="timeline-number">03</div>
+
+</div>
+
+
+
+
+<!-- STEP 5 -->
+
+<div class="timeline-row reveal">
+
+<div class="timeline-card right">
+
+<i class="fa-solid fa-screwdriver-wrench icon"></i>
+
+<h3>Expert Installation</h3>
+
+<p>Professional setup with high focus on safety and alignment.</p>
+
+</div>
+
+<div class="timeline-number">04</div>
+
+</div>
+
+
+<!-- STEP 6 -->
+
+<div class="timeline-row reveal">
+
+<div class="timeline-card left">
+
+<i class="fa-solid fa-handshake icon"></i>
+
+<h3>Handover & Support</h3>
+
+<p>Final quality audit and project delivery with assurance.</p>
+
+</div>
+
+<div class="timeline-number">05</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<script>
+
+const items = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll",()=>{
+
+items.forEach(el=>{
+
+const pos = el.getBoundingClientRect().top;
+
+if(pos < window.innerHeight - 100){
+el.classList.add("show");
+}
+
+});
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="highlights-section">
+
+<div class="glass-icons-bg">
+
+<i class="fa-solid fa-window-maximize"></i>
+<i class="fa-solid fa-border-all"></i>
+<i class="fa-solid fa-table-columns"></i>
+<i class="fa-solid fa-vector-square"></i>
+<i class="fa-solid fa-layer-group"></i>
+
+</div>
+  <div class="highlights-container">
+
+<h2 class="highlights-title">Key Highlights</h2>
+
+<div class="highlights-grid">
+
+<div class="highlight-card">
+<i class="fa-solid fa-building"></i>
+<h3>Modern Architecture</h3>
+<p>Designed for contemporary office and commercial interiors.</p>
+</div>
+
+<div class="highlight-card">
+<i class="fa-solid fa-layer-group"></i>
+<h3>Modular Systems</h3>
+<p>Flexible partition systems for dynamic workspace layouts.</p>
+</div>
+
+<div class="highlight-card">
+<i class="fa-solid fa-ruler-combined"></i>
+<h3>Precision Engineering</h3>
+<p>High-quality materials with precise architectural design.</p>
+</div>
+
+<div class="highlight-card">
+<i class="fa-solid fa-window-maximize"></i>
+<h3>Glass Elegance</h3>
+<p>Elegant frameless glass partitions enhancing transparency.</p>
+</div>
+
+<div class="highlight-card">
+<i class="fa-solid fa-volume-high"></i>
+<h3>Acoustic Comfort</h3>
+<p>Partitions designed for sound control and privacy.</p>
+</div>
+
+<div class="highlight-card">
+<i class="fa-solid fa-screwdriver-wrench"></i>
+<h3>Easy Installation</h3>
+<p>Quick installation with adaptable modular structures.</p>
+</div>
+
+</div>
+</div>
+
+</section>
+<script>
+
+const highlights = document.querySelector(".highlights-section");
+
+const highlightsObserver = new IntersectionObserver((entries) => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+highlights.classList.add("show-highlights");
+}
+
+});
+
+},{
+threshold:0.3
+});
+
+highlightsObserver.observe(highlights);
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="stats-section">
+
+<div class="stats-container">
+
+<div class="stat-card">
+
+<i class="fa-solid fa-building"></i>
+
+<h2><span class="counter" data-target="600">0</span>+</h2>
+
+<p>Projects Completed</p>
+
+</div>
+
+
+<div class="stat-card">
+
+<i class="fa-solid fa-users"></i>
+
+<h2><span class="counter" data-target="500">0</span>+</h2>
+
+<p>Happy Clients</p>
+
+</div>
+
+
+<div class="stat-card">
+
+<i class="fa-solid fa-calendar-check"></i>
+
+<h2><span class="counter" data-target="8">0</span>+</h2>
+
+<p>Years Experience</p>
+
+</div>
+
+
+<div class="stat-card">
+
+<i class="fa-solid fa-user-gear"></i>
+
+<h2><span class="counter" data-target="50">0</span>+</h2>
+
+<p>Expert Team</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<script>
+
+const statsSection = document.querySelector(".stats-section");
+const counters = document.querySelectorAll(".counter");
+
+let started = false;
+
+window.addEventListener("scroll", () => {
+
+const sectionTop = statsSection.getBoundingClientRect().top;
+
+if(sectionTop < window.innerHeight - 100 && !started){
+
+statsSection.classList.add("show-stats");
+
+counters.forEach(counter => {
+
+const target = +counter.getAttribute("data-target");
+let count = 0;
+
+const update = () => {
+
+const increment = target / 100;
+
+if(count < target){
+count += increment;
+counter.innerText = Math.ceil(count);
+setTimeout(update, 20);
+}
+else{
+counter.innerText = target;
+}
+
+};
+
+update();
+
+});
+
+started = true;
+
+}
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+<section class="products-panels reveal">
+  
+    
+<h2 class="products-title">Our Products Gallery</h2>
+
+<div class="panel-container">
+
+<div class="panel reveal">
+<img src="images/sleek1.png">
+<div class="panel-info">
+<h3>Sleek Series</h3>
+<p>Elegant glass partition systems for modern offices.</p>
+<a href="sleekeries.html">View Product</a>
+</div>
+</div>
+
+<div class="panel reveal">
+<img src="images/eco1.png">
+<div class="panel-info">
+<h3>Eco Series - 45</h3>
+<p>Cost-efficient modular partitions for flexible workspaces.</p>
+<a href="ecoseries-45.html">View Product</a>
+</div>
+</div>
+
+<div class="panel reveal">
+<img src="images/ultra1.png">
+<div class="panel-info">
+<h3>Ultra Series - 75</h3>
+<p>Acoustic partition system for privacy and performance.</p>
+<a href="ultraseries-75.html">View Product</a>
+</div>
+</div>
+
+<div class="panel reveal">
+<img src="images/neon2.png">
+<div class="panel-info">
+<h3>Neon Series - 100</h3>
+<p>Heavy-duty partitions for large corporate offices.</p>
+<a href="neonseries-100.html">View Product</a>
+</div>
+</div>
+
+<div class="panel reveal">
+<img src="images/door2.png">
+<div class="panel-info">
+<h3>Style Door</h3>
+<p>Stylish doors designed for glass partition systems.</p>
+<a href="styledoor.html">View Product</a>
+</div>
+</div>
+
+<div class="panel reveal">
+<img src="images/techpanel1.png">
+<div class="panel-info">
+<h3>Technical Panel</h3>
+<p>Advanced panels engineered for modern workspaces.</p>
+<a href="technicalpanel.html">View Product</a>
+</div>
+</div>
+
+<div class="panel reveal">
+<img src="images/hero1.png">
+<div class="panel-info">
+<h3>Architectural Hardware</h3>
+<p>Premium fittings for glass partition installations.</p>
+<a href="architecturalhardware.html">View Product</a>
+</div>
+</div>
+
+<div class="panel reveal">
+<img src="images/hero2.png">
+<div class="panel-info">
+<h3>Accessories</h3>
+<p>Essential accessories for modular partition systems.</p>
+<a href="accessories.html">View Product</a>
+</div>
+</div>
+
+</div>
+</section>
+<script>
+    const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+  reveals.forEach(el=>{
+    const pos = el.getBoundingClientRect().top;
+    if(pos < window.innerHeight - 100){
+      el.classList.add("active");
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<!-- LOGO -->
+
+<div class="footer-box left-anim">
+
+<img src="images/logo.png" class="footer-logo">
+
+<p>
+Premium office partitions and modular solutions
+for modern workplaces.
+</p>
+
+</div>
+
+
+<!-- PRODUCTS -->
+
+<div class="footer-box left-anim">
+
+<h2>Products</h2>
+<ul>
+<li><a href="sleekeries.html">Sleek Series</a></li>
+
+<li><a href="ecoseries-45.html">Eco Series - 45</a></li>
+
+<li><a href="ultraseries-75.html">Ultra Series - 75</a></li>
+
+<li><a href="neonseries-100.html">Neon Series - 100</a></li>
+
+<li><a href="styledoor.html">Style Door</a></li>
+
+<li><a href="technicalpanel.html">Technical Panel</a></li>
+
+<li><a href="architecturalhardware.html">Architectural Hardware</a></li>
+
+<li><a href="accessories.html">Accessories</a></li>
+</ul>
+
+</div>
+
+
+<!-- QUICK LINKS -->
+
+<div class="footer-box right-anim">
+
+<h2>Quick Links</h2>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="product.html">Products</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+</div>
+<!-- ADDRESS -->
+<div class="footer-box right-anim">
+
+<h2>Address</h2>
+
+<div class="address-row">
+<i class="fa-solid fa-location-dot"></i>
+
+<div class="address-text">
+2-4-337/338, Office No.1<br>
+Vijaya Vishnu Residency<br>
+Ramgopalpet, M.G Road<br>
+Secunderabad - 03
+</div>
+</div>
+
+
+<div class="contact-row">
+<i class="fa-solid fa-phone"></i>
+
+<div class="contact-text">
++91 98483 90107<br>
++91 98852 71152
+</div>
+</div>
+
+
+<div class="contact-row">
+<i class="fa-solid fa-envelope"></i>
+
+<div class="contact-text">
+info@oystopartitions.com<br>
+Sales@oystopartitions.com
+</div>
+</div>
+<div class="social">
+<a href="https://www.facebook.com/" target="_blank">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a href="https://www.instagram.com/" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://www.youtube.com/" target="_blank">
+<i class="fa-brands fa-youtube"></i>
+</a>
+</div>
+
+</div>
+</div>
+
+
+<div class="footer-bottom">
+
+<p>
+© 2026 Oysto Partitions. All Rights Reserved |
+Designed and Developed by
+<a href="https://nfosoft.com" target="_blank">nfosoft Innovations</a>
+</p>
+
+</div>
+
+</footer>
+
+
+<script>
+    const left = document.querySelectorAll(".left-anim");
+const right = document.querySelectorAll(".right-anim");
+
+function revealFooter(){
+
+left.forEach(el=>{
+
+const pos = el.getBoundingClientRect().top;
+
+if(pos < window.innerHeight - 100){
+el.classList.add("show-left");
+}
+
+});
+
+right.forEach(el=>{
+
+const pos = el.getBoundingClientRect().top;
+
+if(pos < window.innerHeight - 100){
+el.classList.add("show-right");
+}
+
+});
+
+}
+
+window.addEventListener("scroll", revealFooter);
+</script>
+
+
+
+
+
+<!-- Floating Buttons -->
+
+<a href="https://wa.me/919885271152" class="float-whatsapp" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<a href="tel:+919885271152" class="float-phone">
+<i class="fa-solid fa-phone"></i>
+</a>

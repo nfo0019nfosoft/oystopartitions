@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ABOUT US | OYSTO PARTITIONS</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="icon" type="image/png" href="images/logo.png">
+
+<link rel="stylesheet" href="css/about.css">
+
+</head>
+
+<body>
+
+
+<header id="navbar">
+
+<div class="nav-container">
+
+<!-- LOGO -->
+
+<div class="logo">
+<a href="index.html">
+<img src="images/logo.png" alt="Company Logo">
+</a>
+</div>
+
+
+<!-- NAV LINKS -->
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About Us</a></li>
+
+
+<li class="dropdown">
+
+<a href="product.html">Products  ▾</a>
+
+<div class="dropdown-menu">
+
+<a href="sleekeries.html" class="dropdown-item">Sleek Series</a>
+
+<a href="ecoseries-45.html" class="dropdown-item">Eco Series - 45</a>
+
+<a href="ultraseries-75.html" class="dropdown-item">Ultra Series - 75</a>
+
+<a href="neonseries-100.html" class="dropdown-item">Neon Series - 100</a>
+
+<a href="styledoor.html" class="dropdown-item">Style Door</a>
+
+<a href="technicalpanel.html" class="dropdown-item">Technical Panel</a>
+
+<a href="architecturalhardware.html" class="dropdown-item">Architectural Hardware</a>
+
+<a href="accessories.html" class="dropdown-item">Accessories</a>
+
+</div>
+</li>
+
+<li><a href="contact.html">Contact Us</a></li>
+
+</ul>
+
+
+<!-- MOBILE MENU -->
+
+<div class="menu-toggle">
+☰
+</div>
+
+
+</div>
+
+</header>
+
+
+
+<script>
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const navbar = document.getElementById("navbar");
+
+/* MOBILE MENU */
+
+menuToggle.addEventListener("click", () => {
+navLinks.classList.toggle("active");
+});
+
+/* MOBILE DROPDOWN */
+const dropdown = document.querySelector(".dropdown > a");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+
+dropdown.addEventListener("click", function(e){
+
+if(window.innerWidth <= 768){
+
+// first click → dropdown open
+if(!dropdownMenu.classList.contains("show")){
+e.preventDefault();
+dropdownMenu.classList.add("show");
+}
+
+// second click → open product page
+
+}
+
+});
+
+/* NAVBAR SCROLL EFFECT */
+
+window.addEventListener("scroll", () => {
+
+if(window.scrollY > 80){
+navbar.classList.add("navbar-scrolled");
+}else{
+navbar.classList.remove("navbar-scrolled");
+}
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="about-hero">
+<div class="overlay"></div>
+
+<div class="hero-content">
+<h1>ABOUT US</h1>
+<p>Learn more about our company and our journey</p>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="about-section">
+
+<div class="about-container">
+
+<!-- ROW 1 -->
+
+<div class="about-image">
+<img src="images/about.png" alt="Glass Partition">
+</div>
+
+<div class="about-content">
+
+<h2>About OYSTO</h2>
+
+<p>
+<b>OYSTO</b> is among the pioneering suppliers of architectural interior products and solutions designed for modern commercial and office environments. Our systems are developed to create beautiful, functional, and well-organized interior spaces that enhance productivity and visual appeal. We assist <b>architects, designers, and project consultants</b> by offering a wide range of customized solutions tailored to the requirements of each workspace and project.
+</p>
+
+<p>
+Our <b>Modular Glass Partition Systems</b> are designed to provide flexible and efficient space management for offices, hospitals, and commercial establishments. These partitions allow easy installation, modification, and rearrangement whenever workspace requirements change. In addition to partition systems, OYSTO also provides <b>aluminum skirting, interior accessories, and door hardware solutions</b> that integrate seamlessly with modern interior designs to deliver a refined and professional finish.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- ROW 2 -->
+
+<div class="about-container reverse">
+
+<div class="about-content">
+
+<h2>APPLICATIONS</h2>
+
+<p>
+Modular Glass Partition Systems, Aluminum Skirting and other interior accessories and door hardware offered by OYSTO are widely used for optimization and compartmentalization of work-space across various professional fields such as <b>Corporate Offices, Bank, Research Laboratories, Educational Universities, Building Entrance Systems, Industrial Manufacturing Facilities, Conference/Convention Halls, Hospitals and Clinics.</b>
+</p>
+
+<p>
+Besides these professional applications our products have also been applied in <b>modern/smart home designs</b> as home owners today are keen on non-conventional styles of home interior design.
+</p>
+<p>
+With a focus on <b>durability, precision engineering, and aesthetic appeal, </b>OYSTO solutions are designed to integrate seamlessly with a wide range of architectural styles while providing long-term performance and reliability in both commercial and residential environments.
+</p>
+
+</div>
+
+<div class="about-image">
+<img src="images/highbg.png" alt="Applications">
+</div>
+
+</div>
+
+</section>
+<script>
+
+const aboutSection = document.querySelector(".about-section");
+
+window.addEventListener("scroll", () => {
+
+const sectionTop = aboutSection.getBoundingClientRect().top;
+
+if(sectionTop < window.innerHeight - 100){
+aboutSection.classList.add("show");
+}
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="abou-section">
+    <div class="abou-container">
+
+<div class="abou-heading reveal">
+<h2> About Bharti Enterprises</h2>
+
+</div>
+
+<div class="abou-content reveal">
+<p>
+Bharti Enterprises is a trusted business located in Ramgopalpet.
+We are committed to providing reliable services and quality solutions
+to our customers with professionalism and dedication.
+</p>
+
+<p>
+Our focus is to build long-term relationships with clients by delivering
+excellent service, maintaining integrity, and continuously improving
+our work standards.
+</p>
+</div>
+</div>
+
+</section>
+<script>
+    const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+
+reveals.forEach((element)=>{
+
+const windowHeight = window.innerHeight;
+const revealTop = element.getBoundingClientRect().top;
+
+if(revealTop < windowHeight - 100){
+element.classList.add("active");
+}
+
+});
+
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<section class="values-section">
+<div class="values-wrapper">
+<div class="values-title reveal">
+<h2>Our Vision • Mission • Values</h2>
+<p>Bharti Enterprises – Ramgopalpet</p>
+</div>
+
+<div class="values-container">
+
+<div class="value-box reveal">
+<div class="icon-circle">
+<i class="fas fa-eye"></i>
+</div>
+<h3>Our Vision</h3>
+<p>Providing reliable, high-quality services and delivery across Pan India with excellence and trust.
+</p>
+</div>
+
+<div class="value-box reveal">
+<div class="icon-circle">
+<i class="fas fa-bullseye"></i>
+</div>
+<h3>Our Mission</h3>
+<p>To provide reliable services, maintain professional standards, and ensure complete customer satisfaction.</p>
+</div>
+
+<div class="value-box reveal">
+<div class="icon-circle">
+<i class="fas fa-handshake"></i>
+</div>
+<h3>Our Values</h3>
+<p>Integrity, trust, dedication, and innovation are the core values that guide our work and growth.</p>
+</div>
+
+</div>
+</div>
+
+</section>
+<script>
+
+const vmvItems = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+
+vmvItems.forEach((item)=>{
+
+const windowHeight = window.innerHeight;
+const elementTop = item.getBoundingClientRect().top;
+
+if(elementTop < windowHeight - 120){
+item.classList.add("active");
+}
+
+});
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="experience-section">
+    <div class="exp-wrapper">
+
+<div class="exp-heading reveal">
+<h2>Experience & Expertise</h2>
+<p>Bharti Enterprises – Ramgopalpet</p>
+</div>
+
+<div class="exp-container">
+
+<div class="exp-card reveal">
+<i class="fas fa-briefcase"></i>
+<h3>Years of Experience</h3>
+<p>
+With years of experience in the industry, we understand customer
+needs and we are  provide reliable services with professionalism.
+</p>
+</div>
+
+<div class="exp-card reveal">
+<i class="fas fa-tools"></i>
+<h3>Technical Expertise</h3>
+<p>
+Our team has the  strong technical knowledge and  the skills to deliver
+high-quality work and the effective solutions.
+</p>
+</div>
+
+<div class="exp-card reveal">
+<i class="fas fa-users"></i>
+<h3>Customer Focus</h3>
+<p>
+We are  prioritize the  customer satisfaction by offering trustworthy
+services and maintaining long-term relationships.
+</p>
+</div>
+
+<div class="exp-card reveal">
+<i class="fas fa-award"></i>
+<h3>Quality Service</h3>
+<p>
+We maintain high standards in every service we  are provide the ,
+ensuring quality, reliability, and excellence.
+</p>
+</div>
+
+</div>
+</div>
+
+</section>
+<script>
+
+const revealElements = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", ()=>{
+
+revealElements.forEach((el)=>{
+
+const windowHeight = window.innerHeight;
+const elementTop = el.getBoundingClientRect().top;
+
+if(elementTop < windowHeight - 120){
+el.classList.add("active");
+}
+
+});
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<!-- LOGO -->
+
+<div class="footer-box left-anim">
+
+<img src="images/logo.png" class="footer-logo">
+
+<p>
+Premium office partitions and modular solutions
+for modern workplaces.
+</p>
+
+</div>
+
+
+<!-- PRODUCTS -->
+
+<div class="footer-box left-anim">
+
+<h2>Products</h2>
+<ul>
+<li><a href="sleekeries.html">Sleek Series</a></li>
+
+<li><a href="ecoseries-45.html">Eco Series - 45</a></li>
+
+<li><a href="ultraseries-75.html">Ultra Series - 75</a></li>
+
+<li><a href="neonseries-100.html">Neon Series - 100</a></li>
+
+<li><a href="styledoor.html">Style Door</a></li>
+
+<li><a href="technicalpanel.html">Technical Panel</a></li>
+
+<li><a href="architecturalhardware.html">Architectural Hardware</a></li>
+
+<li><a href="accessories.html">Accessories</a></li>
+</ul>
+
+</div>
+
+
+<!-- QUICK LINKS -->
+
+<div class="footer-box right-anim">
+
+<h2>Quick Links</h2>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="product.html">Products</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+</div>
+<!-- ADDRESS -->
+<div class="footer-box right-anim">
+
+<h2>Address</h2>
+
+<div class="address-row">
+<i class="fa-solid fa-location-dot"></i>
+
+<div class="address-text">
+2-4-337/338, Office No.1<br>
+Vijaya Vishnu Residency<br>
+Ramgopalpet, M.G Road<br>
+Secunderabad - 03
+</div>
+</div>
+
+
+<div class="contact-row">
+<i class="fa-solid fa-phone"></i>
+
+<div class="contact-text">
++91 98483 90107<br>
++91 98852 71152
+</div>
+</div>
+
+
+<div class="contact-row">
+<i class="fa-solid fa-envelope"></i>
+
+<div class="contact-text">
+info@oystopartitions.com<br>
+Sales@oystopartitions.com
+</div>
+</div>
+<div class="social">
+<a href="https://www.facebook.com/" target="_blank">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a href="https://www.instagram.com/" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://www.youtube.com/" target="_blank">
+<i class="fa-brands fa-youtube"></i>
+</a>
+</div>
+
+</div>
+</div>
+
+
+<div class="footer-bottom">
+
+<p>
+© 2026 Oysto Partitions. All Rights Reserved |
+Designed and Developed by
+<a href="https://nfosoft.com" target="_blank">nfosoft Innovations</a>
+</p>
+
+</div>
+
+</footer>
+
+
+<script>
+    const left = document.querySelectorAll(".left-anim");
+const right = document.querySelectorAll(".right-anim");
+
+function revealFooter(){
+
+left.forEach(el=>{
+
+const pos = el.getBoundingClientRect().top;
+
+if(pos < window.innerHeight - 100){
+el.classList.add("show-left");
+}
+
+});
+
+right.forEach(el=>{
+
+const pos = el.getBoundingClientRect().top;
+
+if(pos < window.innerHeight - 100){
+el.classList.add("show-right");
+}
+
+});
+
+}
+
+window.addEventListener("scroll", revealFooter);
+</script>
+
+
+
+
+
+<!-- Floating Buttons -->
+
+<a href="https://wa.me/919885271152" class="float-whatsapp" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<a href="tel:+919885271152" class="float-phone">
+<i class="fa-solid fa-phone"></i>
+</a>
