@@ -328,10 +328,10 @@ background:rgba(0, 0, 0, 0.7);
 .hero-content{
 position:absolute;
 top:60%;
-left:50%;
+left:25%;
 transform:translate(-50%,-50%);
 color:white;
-text-align:center;
+text-align:left;
 max-width:800px;
 padding:20px;
 }
