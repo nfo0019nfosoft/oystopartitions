@@ -2079,7 +2079,7 @@ margin:8px;
 
 .float-whatsapp{
 position:fixed;
-bottom:95px;
+bottom:50px;
 right:20px;
 text-decoration: none;
 width:55px;
@@ -2161,52 +2161,24 @@ transform:scale(1.1);
 }
 
 
+/* HIDE PHONE IN DESKTOP */
 
-
-
-
-
-.download-file-btn {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 14px 20px;
-    background: #6c63ff; /* నీ పర్పుల్ థీమ్ */
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    width: 100%;
-    transition: 0.3s;
-    margin-top: 15px;
+.float-phone{
+display:none;
 }
 
-.download-file-btn:hover {
-    background: #49326b;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
-}
-.download-file-btn {
-    display: none; /* మొదట కనిపించదు */
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 15px 30px;
-    background-color: #0082ca; /* ఇమేజ్ లో ఉన్న బ్లూ కలర్ */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 20px auto;
-    transition: 0.3s ease;
+/* MOBILE VIEW */
+
+@media(max-width:768px){
+
+.float-whatsapp{
+bottom:95px;
 }
 
-.download-file-btn:hover {
-    background-color: #005f91;
-    transform: scale(1.05);
+/* SHOW PHONE ICON IN MOBILE */
+.float-phone{
+display:flex;   /* IMPORTANT FIX */
+bottom:20px;
+}
+
 }
