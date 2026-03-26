@@ -111,7 +111,7 @@ pointer-events:none;
 transition:0.35s;
 
 /* IMAGE BACKGROUND */
-background:#282829;
+background:white;
 
 background-size:contain;
 background-position:center;
@@ -132,7 +132,7 @@ pointer-events:auto;
 .dropdown-item {
     display: block;
     text-decoration: none;
-    color: white !important; /* Force black initially */
+    color: black !important; /* Force black initially */
     font-size: 16px;
     padding: 10px 15px;
     border-radius: 6px;
@@ -283,60 +283,67 @@ pointer-events:auto;
 
 
 
-
-
-
-
-
-
 /* HERO */
 
 .products-hero{
 height:60vh;
-background: url("../images/productbg.png")  center/cover no-repeat;
+background: url("../images/productbg.png") center/cover no-repeat;
 
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
 position:relative;
+color:white;
+text-align:center;
 }
 
-.hero-overlay{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.7);
-}
+/* REMOVE OVERLAY ❌ */
+/* .hero-overlay removed */
+
+/* TEXT - PERFECT CENTER */
 
 .hero-text{
-position:relative;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
 z-index:2;
+margin-top: 30px;
 }
+
+/* REMOVE DEFAULT MARGINS */
+
+
+/* TITLE */
 
 .hero-text h1{
-   text-transform: uppercase; 
+text-transform: uppercase;
 font-size:50px;
-
+white-space:nowrap;
+/* SHADE */
+text-shadow:
+0 5px 15px rgba(0,0,0,1.9),
+0 2px 5px rgba(0,0,0,1.9);
 }
+
+/* TEXT */
 
 .hero-text p{
 margin-top:10px;
 font-size:15px;
+white-space:nowrap;
+/* SHADE */
+text-shadow:
+0 3px 10px rgba(0,0,0,0.8),
+0 1px 3px rgba(0,0,0,0.6);
 }
 
+/* RESPONSIVE */
 
 @media(max-width:1000px){
-
 
 .hero-text h1{
 font-size:36px;
 }
-}
 
+}
 
 
 
@@ -588,6 +595,37 @@ margin:auto;
         opacity: 1; /* Mobile lo hover undadu kabatti tag direct ga kanipisthe better */
     }
 }
+
+
+.main-frame{
+height:480px;
+
+/* STRONG BORDER */
+border-top:2px solid #057fcc;
+border-right:2px solid #057fcc;
+
+/* EXTRA GLOW LINE */
+box-shadow:
+2px 0 0 rgba(5,127,204,0.4),
+0 -2px 0 rgba(5,127,204,0.4);
+}
+
+.side-images .small-frame:first-child{
+border-left:2px solid #057fcc;
+border-bottom:2px solid #057fcc;
+
+/* EXTRA VISIBILITY */
+box-shadow:
+-2px 0 0 rgba(5,127,204,0.4),
+0 2px 0 rgba(5,127,204,0.4);
+}
+
+
+
+
+
+
+
 
 
 
