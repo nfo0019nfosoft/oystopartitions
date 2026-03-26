@@ -268,178 +268,186 @@ pointer-events:auto;
 
 
 
-
-/* HERO */
-
-.hero{
-position:relative;
-height:100vh;
-overflow:hidden;
+/* ================= GLOBAL & RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* SLIDER */
-
-.hero-slider{
-width:100%;
-height:100%;
-overflow:hidden;
+body {
+    overflow-x: hidden; /* Horizontal scroll rakunda untundi */
 }
 
-/* TRACK */
-
-.hero-track{
-display:flex;
-height:100%;
-transition:transform 0.7s ease-in-out;
-width:100%;
+/* ================= HERO SECTION ================= */
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: #000; /* Loading appudu black background kanipistundi */
 }
 
-/* SLIDE */
-
-.hero-slide{
-min-width:100%;
-height:100vh;
-position:relative;
-flex-shrink:0;
-overflow:hidden; /* IMPORTANT FIX */
+/* SLIDER CONTAINER */
+.hero-slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-/* IMAGE */
-
-.hero-slide img{
-width:100%;
-height:100%;
-object-fit:cover;
-
-/* REMOVE GLOBAL ZOOM */
-animation:none;
+/* TRACK: Idhi slides ni line lo peduthundi */
+.hero-track {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.7s ease-in-out;
+    will-change: transform;
 }
 
-/* ONLY ACTIVE SLIDE ZOOM */
-
-.hero-slide.active img{
-animation:zoomHero 10s ease forwards;
+/* SLIDE: Main Fix ikkade undi */
+.hero-slide {
+    flex: 0 0 100%; /* Slide eppudu 100% width maintain chestundi, shrink avvadu */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
 
-/* ZOOM KEYFRAMES */
-
-@keyframes zoomHero{
-0%{transform:scale(1);}
-100%{transform:scale(1.15);}
+/* IMAGE SETTINGS */
+.hero-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Image stretch avvakunda maintain chestundi */
+    object-position: center center;
+    display: block;
+    animation: none;
 }
 
-/* CONTENT */
-
-.hero-content{
-position:absolute;
-top:60%;
-left:25%;
-transform:translate(-50%,-50%);
-color:white;
-text-align:left;
-max-width:800px;
-padding:20px;
-
-/* TEXT SHADOW */
-text-shadow:0 4px 20px rgba(0,0,0,1);
+/* ACTIVE SLIDE ZOOM ANIMATION */
+.hero-slide.active img {
+    animation: zoomHero 10s ease forwards;
 }
 
-/* TITLE */
-
-.hero-content h1{
-font-size:55px;
-font-weight:600;
-margin-bottom:15px;
-line-height:1.2;
+@keyframes zoomHero {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
 }
 
-/* TEXT */
-
-.hero-content p{
-font-size:20px;
-margin-bottom:25px;
-opacity:0.9;
+/* OVERLAY: Text clear ga kanipichadaniki */
+.ovrlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); /* Slight dark layer */
+    z-index: 1;
 }
 
-/* BUTTON */
-
-.hero-btn{
-display:inline-block;
-padding:12px 28px;
-background:#057fcc;
-color:white;
-border-radius:30px;
-text-decoration:none;
-transition:0.3s;
+/* ================= CONTENT STYLES ================= */
+.hero-content {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    max-width: 800px;
+    padding: 20px;
+    z-index: 2;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
 }
 
-.hero-btn:hover{
-transform:translateY(-3px);
-background:#046bb0;
+.hero-content h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: #057fcc;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    background: #046bb0;
+    box-shadow: 0 5px 15px rgba(5, 127, 204, 0.4);
+}
+
+/* ================= MOBILE RESPONSIVE (Fix for Half Image) ================= */
+
+@media (max-width: 768px) {
+    .hero {
+        height: 100vh; /* Mobile lo full screen coverage */
+    }
+
+    .hero-track {
+        display: flex; /* Flex layout ni force chestundi */
+    }
+
+    .hero-slide {
+        flex: 0 0 100%; /* Kachitanga okka slide matrame screen lo untundi */
+        width: 100%;
+    }
+
+    .hero-content {
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: left;
+        width: 90%;
+        max-width: none;
+        padding: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .hero-btn {
+        padding: 12px 26px;
+        font-size: 15px;
+    }
+}
+
+/* VERY SMALL DEVICES */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    
+    .hero-content p {
+        font-size: 14px;
+    }
 }
 
 
-/* ================= MOBILE ================= */
 
-@media(max-width:768px){
 
-.hero{
-height:90vh;
-}
 
-/* CONTENT CENTER */
 
-.hero-content{
-top:65%;
-left:50%;
-transform:translate(-50%,-50%);
-text-align:center;
-width:90%;
-padding:15px;
-}
 
-/* TITLE */
 
-.hero-content h1{
-font-size:28px;
-line-height:1.3;
-}
-
-/* TEXT */
-
-.hero-content p{
-font-size:15px;
-margin-bottom:18px;
-}
-
-/* BUTTON */
-
-.hero-btn{
-padding:10px 22px;
-font-size:14px;
-}
-
-/* IMAGE POSITION */
-
-.hero-slide img{
-object-position:center;
-}
-
-}
-
-/* SMALL MOBILE */
-
-@media(max-width:480px){
-
-.hero-content h1{
-font-size:24px;
-}
-
-.hero-content p{
-font-size:14px;
-}
-
-}
 
 
 
@@ -1621,26 +1629,62 @@ opacity:1;
 transform:translateY(0);
 }
 
-
-
-
-
-
-
-/* Mobile */
 @media(max-width:900px){
-.panel-container{
-flex-direction:column;
-height:auto;
-max-width:600px;  /* optional better look */
-margin:auto;
+
+  /* Section spacing */
+  .products-panels{
+    padding:30px 4%;
+  }
+
+  /* Stack panels vertically */
+  .panel-container{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    height:auto;
+    max-width:100%;
+    margin:auto;
+    overflow:visible; /* IMPORTANT */
+  }
+
+  /* Each panel */
+  .panel{
+    width:100%;
+    height:220px;
+    flex:none; /* VERY IMPORTANT (fixes missing panels) */
+    border-radius:12px;
+  }
+
+  /* Image */
+  .panel img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+  /* Content overlay */
+  .panel-info{
+    opacity:1; /* Always visible on mobile */
+    padding:15px;
+    background:linear-gradient(transparent, rgba(0,0,0,0.75));
+  }
+
+  /* Disable hover effects (no hover on mobile) */
+  .panel:hover{
+    flex:none;
+  }
+
+  .panel:hover img{
+    transform:none;
+  }
+
+  .panel:hover .panel-info{
+    opacity:1;
+  }
+
+
 }
 
-.panel{
-height:250px;
-}
-
-}
 
 
 
