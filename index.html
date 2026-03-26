@@ -163,8 +163,8 @@ navbar.classList.remove("navbar-scrolled");
                 <img src="images/door1.png">
                 <div class="ovrlay"></div>
                 <div class="hero-content">
-                    <h1>Modern Glass <br>Partition Systems</h1>
-                    <p>Elegant • Durable • Corporate Solutions</p>
+                    <h1>Premium Glass <br>Door Solutions</h1>
+<p>Stylish • Secure • Modern Interiors</p>
                     <a href="product.html" class="hero-btn">Explore Products</a>
                 </div>
             </div>
@@ -174,8 +174,8 @@ navbar.classList.remove("navbar-scrolled");
                 <img src="images/door3.png">
                 <div class="ovrlay"></div>
                 <div class="hero-content">
-                    <h1>Modern Glass<br> Partition Systems</h1>
-                    <p>Elegant • Durable • Corporate Solutions</p>
+                    <h1>Elegant Glass <br>Door Systems</h1>
+<p>Designed for Style • Built for Strength</p>
                     <a href="product.html" class="hero-btn">Explore Products</a>
                 </div>
             </div>
@@ -185,8 +185,8 @@ navbar.classList.remove("navbar-scrolled");
                 <img src="images/neon1.png">
                 <div class="ovrlay"></div>
                 <div class="hero-content">
-                    <h1>Modern Glass <br>Partition Systems</h1>
-                    <p>Elegant • Durable • Corporate Solutions</p>
+                    <h1>Luxury Glass <br>Door Designs</h1>
+<p>Enhancing Spaces with Modern Elegance</p>
                     <a href="product.html" class="hero-btn">Explore Products</a>
                 </div>
             </div>
@@ -196,8 +196,8 @@ navbar.classList.remove("navbar-scrolled");
                 <img src="images/door2.png">
                 <div class="ovrlay"></div>
                 <div class="hero-content">
-                    <h1>Modern Glass<br> Partition Systems</h1>
-                    <p>Elegant • Durable • Corporate Solutions</p>
+                   <h1>Glass Door <br>Solutions</h1>
+<p>Modern • Durable • High Performance</p>
                     <a href="product.html" class="hero-btn">Explore Products</a>
                 </div>
             </div>
@@ -207,8 +207,8 @@ navbar.classList.remove("navbar-scrolled");
                 <img src="images/techpanel1.png">
                 <div class="ovrlay"></div>
                 <div class="hero-content">
-                    <h1>Modern Glass <br>Partition Systems</h1>
-                    <p>Elegant • Durable • Corporate Solutions</p>
+                    <h1>Frameless Glass <br>Door Solutions</h1>
+<p>Seamless Design • Modern Luxury</p>
                     <a href="product.html" class="hero-btn">Explore Products</a>
                 </div>
             </div>
@@ -232,14 +232,24 @@ const slides = document.querySelectorAll(".hero-slide");
 let index = 0;
 
 function slideHero(){
+
+/* REMOVE OLD ACTIVE */
+slides.forEach(slide => slide.classList.remove("active"));
+
 index++;
-track.style.transform = `translateX(-${index * 100}vw)`;
+track.style.transform = `translateX(-${index * 100}%)`;
+
+/* ADD ACTIVE CLASS */
+slides[index].classList.add("active");
 
 if(index === slides.length - 1){
 setTimeout(()=>{
 track.style.transition="none";
 track.style.transform="translateX(0)";
 index=0;
+
+slides.forEach(s => s.classList.remove("active"));
+slides[0].classList.add("active");
 
 setTimeout(()=>{
 track.style.transition="transform 0.7s ease-in-out";
@@ -249,9 +259,11 @@ track.style.transition="transform 0.7s ease-in-out";
 }
 }
 
+/* INITIAL ACTIVE */
+slides[0].classList.add("active");
+
 setInterval(slideHero,3500);
 </script>
-
 
 
 
