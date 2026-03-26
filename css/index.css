@@ -8,50 +8,30 @@ html, body{
 overflow-x:hidden;
 width:100%;
 }
-
 /* NAVBAR */
+
 #navbar{
 position:fixed;
-width:100%;
 top:0;
 left:0;
+width:100%;
+background:white;
 z-index:1000;
-background:
-linear-gradient(rgba(58, 55, 55, 0.5));
-box-shadow:none;
-transition:background 0.3s ease, box-shadow 0.3s ease;
+transition:0.3s;
 }
 
-/* TEXT COLOR ON HERO */
-
-#navbar:not(.navbar-scrolled) .nav-links a{
-color:white;
-}
-
-#navbar.navbar-scrolled{
-background:white; /* transparent color */
-backdrop-filter:blur(0px);
--webkit-backdrop-filter:blur(8px);
-box-shadow:0 2px 20px rgba(0,0,0,0.08);
-}
-
-
-.navbar-scrolled .nav-links a{
-color:black;
-}
-
-#navbar .nav-links a:hover{
-color:#057fcc;
+.navbar-scrolled{
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
 }
 
 /* CONTAINER */
 .nav-container{
 width:100%;
 max-width:1200px;
-margin:auto;
+margin:0 auto;
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
 padding:14px 16px;
 }
 
@@ -61,15 +41,18 @@ padding:14px 16px;
 height:60px;
 display:block;
 }
-
+.menu-toggle{
+display:none;
+font-size:26px;
+cursor:pointer;
+}
 /* NAV LINKS */
 
 .nav-links{
 display:flex;
 list-style:none;
-gap:50px;
+gap:40px;
 align-items:center;
-
 }
 
 .nav-links a{
@@ -77,10 +60,15 @@ text-decoration:none;
 font-weight:700;
 position:relative;
 transition:0.3s;
+color:black;
 text-transform:uppercase;
 }
 
-/* HOVER LINE */
+/* HOVER */
+
+.nav-links a:hover{
+color:#057fcc;
+}
 
 .nav-links > li > a::after{
 content:"";
@@ -123,9 +111,8 @@ pointer-events:none;
 transition:0.35s;
 
 /* IMAGE BACKGROUND */
+
 background:white;
-
-
 background-size:contain;
 background-position:center;
 background-repeat:no-repeat;
@@ -133,11 +120,14 @@ background-repeat:no-repeat;
 box-shadow:0 15px 35px rgba(0,0,0,0.15);
 }
 
+/* SHOW DROPDOWN */
+
 .dropdown:hover .dropdown-menu{
 opacity:1;
 transform:translateY(0);
 pointer-events:auto;
 }
+
 /* Dropdown Item base style */
 .dropdown-item {
     display: block;
@@ -155,6 +145,15 @@ pointer-events:auto;
     background: #057fcc;
     color: white !important; /* Hover chesinappudu white avvali */
 }
+
+
+.dropdown-menu.show{
+opacity:1;
+transform:translateY(0);
+pointer-events:auto;
+display:flex;
+}
+
 /* MOBILE MENU */
 
 .menu-toggle{
@@ -164,7 +163,7 @@ cursor:pointer;
 }
 
 
-/* ================= MOBILE NAVBAR ================= */
+
 
 @media (max-width:768px){
 
@@ -264,6 +263,7 @@ pointer-events:auto;
 }
 
 }
+
 
 
 
